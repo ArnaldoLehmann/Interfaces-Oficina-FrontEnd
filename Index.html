@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="Style.css"> <!-- arquivo CSS minúsculo -->
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo-destaque">Tarefas</h1>
+
+        <div class="input-area">
+            <input type="text" class="input-animado" placeholder="Quais tarefas preciso anotar?">
+            <button class="btn-add">+</button>
+        </div>
+       
+        <div class="buttons-container">
+  <button class="btn-clear-done" aria-label="Limpar tarefas concluídas">Limpar Concluídas</button>
+  <button class="btn-check-all" aria-label="Marcar todas as tarefas como feitas">Marcar Todas Concluídas</button>
+</div>
+
+        <ul class="lista-tarefas"></ul>
+    </div>
+
+    <div class="sidebar">
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="Index.html" onclick="InterfaceBonitaFuncional()">Interface 1</a></li>
+            <li><a href="Index2.html" onclick="InterfaceBonitaDesfuncional()">Interface 2</a></li>
+        </ul>
+    </div>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
